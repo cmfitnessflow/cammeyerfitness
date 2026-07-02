@@ -879,3 +879,76 @@ h3 {
     background-position: center;
   }
 }
+
+
+/* Where I Train sections */
+.section-location {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.82) 48%, rgba(0, 0, 0, 0.52) 100%),
+    url("assets/uploads/training-03.jpg") center / cover no-repeat;
+}
+
+.location-training {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.82) 50%, rgba(0, 0, 0, 0.52) 100%),
+    url("assets/uploads/strength-machine-bg.jpg") center / cover no-repeat;
+}
+
+.location-card {
+  max-width: 780px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0, 0, 0, 0.44);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.location-card .eyebrow {
+  color: var(--gold);
+}
+
+.location-card h2 {
+  color: var(--white);
+  max-width: 12em;
+  margin-top: 0.45rem;
+}
+
+.location-card p {
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 690px;
+}
+
+.location-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.location-points span {
+  border: 1px solid rgba(249, 197, 18, 0.52);
+  border-radius: 999px;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.38);
+  padding: 0.72rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 720px) {
+  .section-location,
+  .location-training {
+    background-position: center;
+  }
+
+  .location-points {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
