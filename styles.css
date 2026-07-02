@@ -888,7 +888,7 @@ h3 {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.82) 48%, rgba(0, 0, 0, 0.52) 100%),
-    url("assets/uploads/training-03.jpg") center / cover no-repeat;
+    url("assets/uploads/barbell-floor-bg.jpg") center / cover no-repeat;
 }
 
 .location-training {
@@ -950,5 +950,45 @@ h3 {
   .location-points {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+
+/* Refined mobile styling for the training location tags */
+@media (max-width: 720px) {
+  .location-card {
+    width: min(100%, calc(100vw - 2rem));
+    border-left: 0;
+    border-top: 3px solid var(--gold);
+    padding: 2rem 1.25rem;
+    background: rgba(0, 0, 0, 0.68);
+  }
+
+  .location-card h2 {
+    max-width: 100%;
+    font-size: clamp(1.9rem, 9vw, 2.45rem);
+  }
+
+  .location-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    width: 100%;
+    margin-top: 1.45rem;
+  }
+
+  .location-points span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 3.25rem;
+    border-radius: 0;
+    border: 1px solid rgba(249, 197, 18, 0.42);
+    border-left: 4px solid var(--gold);
+    background: linear-gradient(90deg, rgba(249, 197, 18, 0.16), rgba(0, 0, 0, 0.34));
+    padding: 0.9rem 1rem;
+    line-height: 1.25;
+    letter-spacing: 0.09em;
+    white-space: normal;
   }
 }
