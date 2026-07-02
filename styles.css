@@ -1,16 +1,16 @@
 :root {
-  --black: #0f1010;
-  --charcoal: #181a1b;
-  --ink: #242626;
+  --black: #000000;
+  --charcoal: #111111;
+  --ink: #1a1a1a;
   --gray: #6f7472;
   --soft-gray: #f4f2ee;
   --line: #dedbd2;
   --white: #ffffff;
-  --gold: #d6a93d;
-  --gold-soft: #f3d887;
+  --gold: #F9C512;
+  --gold-soft: #FFE27A;
   --shadow: 0 28px 90px rgba(15, 16, 16, 0.16);
   --radius: 8px;
-  --header-height: 82px;
+  --header-height: 104px;
 }
 
 * {
@@ -76,7 +76,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid rgba(214, 169, 61, 0.22);
+  border-bottom: 1px solid rgba(249, 197, 18, 0.22);
   background: var(--black);
   backdrop-filter: none;
   transition: box-shadow 240ms ease, background 240ms ease, border-color 240ms ease;
@@ -102,9 +102,9 @@ button {
 }
 
 .brand-mark {
-  width: 132px;
-  height: 64px;
-  flex: 0 0 132px;
+  width: clamp(176px, 17vw, 244px);
+  height: 92px;
+  flex: 0 0 clamp(176px, 17vw, 244px);
   object-fit: contain;
 }
 
@@ -114,7 +114,7 @@ button {
   display: inline-grid;
   place-content: center;
   gap: 5px;
-  border: 1px solid rgba(214, 169, 61, 0.34);
+  border: 1px solid rgba(249, 197, 18, 0.34);
   border-radius: var(--radius);
   background: var(--charcoal);
   color: var(--white);
@@ -146,7 +146,7 @@ button {
   display: grid;
   gap: 0.35rem;
   padding: 1rem;
-  border-bottom: 1px solid rgba(214, 169, 61, 0.22);
+  border-bottom: 1px solid rgba(249, 197, 18, 0.22);
   background: var(--black);
   box-shadow: var(--shadow);
   opacity: 0;
@@ -493,7 +493,7 @@ h3 {
 .step-card:hover,
 .testimonial-card:hover,
 .credential-grid div:hover {
-  border-color: rgba(214, 169, 61, 0.42);
+  border-color: rgba(249, 197, 18, 0.42);
   box-shadow: 0 20px 60px rgba(15, 16, 16, 0.1);
   transform: translateY(-4px);
 }
@@ -504,7 +504,7 @@ h3 {
 
 .quote-panel {
   background: var(--charcoal);
-  border: 1px solid rgba(214, 169, 61, 0.36);
+  border: 1px solid rgba(249, 197, 18, 0.36);
 }
 
 .quote-panel p {
@@ -548,7 +548,7 @@ h3 {
 
 .final-cta {
   background:
-    linear-gradient(135deg, rgba(214, 169, 61, 0.12), transparent 42%),
+    linear-gradient(135deg, rgba(249, 197, 18, 0.12), transparent 42%),
     var(--white);
 }
 
@@ -592,6 +592,18 @@ h3 {
 .footer-contact a {
   color: rgba(255, 255, 255, 0.72);
   font-weight: 700;
+}
+
+
+.footer-legal {
+  margin: 0.25rem 0 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-contact {
+  align-items: center;
 }
 
 .footer-contact a:hover,
@@ -653,6 +665,7 @@ h3 {
   .nav-menu .nav-cta {
     margin-left: 0.35rem;
     padding-inline: 1rem;
+    white-space: nowrap;
   }
 
   .why {
@@ -679,10 +692,14 @@ h3 {
 }
 
 @media (max-width: 430px) {
+  :root {
+    --header-height: 92px;
+  }
+
   .brand-mark {
-    width: 112px;
-    height: 56px;
-    flex-basis: 112px;
+    width: 154px;
+    height: 78px;
+    flex-basis: 154px;
   }
 
   h1 {
@@ -708,7 +725,7 @@ h3 {
 /* Multi-page SEO expansion */
 .page-hero {
   background:
-    linear-gradient(135deg, rgba(214, 169, 61, 0.12), transparent 38%),
+    linear-gradient(135deg, rgba(249, 197, 18, 0.12), transparent 38%),
     var(--black);
   color: var(--white);
   min-height: 52svh;
@@ -782,5 +799,83 @@ h3 {
 
   .testimonial-grid .testimonial-card:first-child {
     grid-column: span 2;
+  }
+}
+
+
+/* Added background image treatments for interior pages */
+.page-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.68) 48%, rgba(0, 0, 0, 0.28) 100%),
+    linear-gradient(135deg, rgba(249, 197, 18, 0.16), transparent 42%),
+    var(--black);
+}
+
+.about-page .page-hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.66) 50%, rgba(0, 0, 0, 0.24) 100%),
+    url("assets/uploads/strength-machine-bg.jpg") center / cover no-repeat;
+}
+
+.training-page .page-hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.64) 46%, rgba(0, 0, 0, 0.2) 100%),
+    url("assets/uploads/barbell-floor-bg.jpg") center / cover no-repeat;
+}
+
+.testimonials-page .page-hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.66) 48%, rgba(0, 0, 0, 0.26) 100%),
+    url("assets/uploads/curl-bars-bg.jpg") center / cover no-repeat;
+}
+
+.contact-page .page-hero,
+.faq-page .page-hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0.3) 100%),
+    url("assets/uploads/squat-bar-bg.jpg") center / cover no-repeat;
+}
+
+.about-page #philosophy-title,
+.training-page #packages-title,
+.contact-page #message-title {
+  position: relative;
+}
+
+.training-page .section-dark {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.91) 0%, rgba(0, 0, 0, 0.74) 54%, rgba(0, 0, 0, 0.34) 100%),
+    url("assets/uploads/curl-bars-bg.jpg") center / cover no-repeat;
+}
+
+.contact-page .section-dark {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 54%, rgba(0, 0, 0, 0.34) 100%),
+    url("assets/uploads/barbell-floor-bg.jpg") center / cover no-repeat;
+}
+
+.about-page .section-quiet {
+  background:
+    linear-gradient(90deg, rgba(244, 242, 238, 0.95) 0%, rgba(244, 242, 238, 0.9) 52%, rgba(244, 242, 238, 0.78) 100%),
+    url("assets/uploads/squat-bar-bg.jpg") center / cover no-repeat;
+}
+
+.testimonials-page .final-cta,
+.faq-page .final-cta {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 54%, rgba(255, 255, 255, 0.8) 100%),
+    url("assets/uploads/strength-machine-bg.jpg") center / cover no-repeat;
+}
+
+@media (max-width: 720px) {
+  .about-page .page-hero,
+  .training-page .page-hero,
+  .testimonials-page .page-hero,
+  .contact-page .page-hero,
+  .faq-page .page-hero {
+    background-position: center;
   }
 }
