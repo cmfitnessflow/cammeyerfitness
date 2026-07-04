@@ -678,6 +678,10 @@ h3 {
     grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
   }
 
+  .about-story-layout {
+    grid-template-columns: minmax(0, 0.86fr) minmax(320px, 1fr);
+  }
+
   .steps,
   .testimonials,
   .credential-grid {
@@ -750,6 +754,37 @@ h3 {
 .prose p {
   color: var(--gray);
   font-size: clamp(1.04rem, 1.6vw, 1.18rem);
+}
+
+.about-story {
+  background: var(--white);
+}
+
+.about-story-layout {
+  display: grid;
+  gap: clamp(2.4rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.about-story-copy h2 {
+  max-width: 11.5ch;
+}
+
+.about-story-copy .prose {
+  margin-top: 1.5rem;
+}
+
+.about-portrait {
+  margin: 0;
+  background: var(--white);
+}
+
+.about-portrait img {
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  object-position: center bottom;
 }
 
 .testimonial-card small {
