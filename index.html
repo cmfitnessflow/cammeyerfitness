@@ -16,7 +16,10 @@
       content="Personal fitness coaching in St. Petersburg for beginners and adults 50+ who want to stay strong, mobile, independent, and pain-free."
     />
     <meta property="og:url" content="https://www.cammeyerfitness.com/" />
-    <meta property="og:image" content="https://www.cammeyerfitness.com/assets/logo/cam-meyer-fitness-logo.png" />
+    <meta property="og:image" content="https://www.cammeyerfitness.com/assets/images/rowing-hero.webp" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1066" />
+    <meta property="og:image:alt" content="Calm fitness training environment for Cam Meyer Fitness" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="assets/logo/cam-meyer-fitness-logo.png" />
     <link rel="preload" as="image" href="assets/images/rowing-hero.webp" />
@@ -30,7 +33,7 @@
             "@id": "https://www.cammeyerfitness.com/#business",
             "name": "Cam Meyer Fitness",
             "url": "https://www.cammeyerfitness.com/",
-            "telephone": "424-333-6200",
+            "telephone": "+14243336200",
             "email": "cammeyerfit@gmail.com",
             "image": "https://www.cammeyerfitness.com/assets/logo/cam-meyer-fitness-logo.png",
             "description": "Personal fitness coaching in St. Petersburg, Florida for beginners, adults 50+, and active adults who want strength, mobility, confidence, and longevity.",
@@ -41,7 +44,28 @@
               "addressCountry": "US"
             },
             "areaServed": { "@type": "City", "name": "St. Petersburg" },
-            "priceRange": "$$"
+            "priceRange": "$$",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Personal training services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "In-person personal training",
+                    "areaServed": "St. Petersburg, FL"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Online fitness coaching"
+                  }
+                }
+              ]
+            }
           },
           {
             "@type": "Person",
@@ -73,7 +97,7 @@
           <a href="#approach">Approach</a>
           <a href="#coaching">Coaching</a>
           <a href="#results">Results</a>
-          <a class="nav-cta" href="tel:+1424333620">Schedule a Conversation</a>
+          <a class="nav-cta" href="tel:+14243336200">Schedule a Conversation</a>
         </div>
       </nav>
     </header>
@@ -90,12 +114,12 @@
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#contact">Schedule Your First Session</a>
-              <a class="button button-ghost" href="tel:14243336200">Call Cam</a>
+              <a class="button button-ghost" href="tel:+14243336200">Call Cam</a>
             </div>
           </div>
 
           <div class="hero-media reveal" aria-label="Training-focused fitness imagery">
-            <img src="assets/images/rowing-hero.webp" alt="Fitness equipment in a calm training environment" width="1600" height="1067" />
+            <img src="assets/images/rowing-hero.webp" alt="Fitness equipment in a calm training environment" width="1600" height="1066" fetchpriority="high" decoding="async" />
             <div class="glass-card hero-card">
               <span>Strength</span>
               <span>Confidence</span>
@@ -108,8 +132,8 @@
       <section class="section approach" id="approach" aria-labelledby="approach-title">
         <div class="shell asym-grid">
           <div class="image-stack reveal">
-            <img class="image-main" src="assets/images/cam-fitness-about.webp" alt="Cam Meyer with Skye" width="1254" height="1254" />
-            <img class="image-overlap" src="assets/images/st-pete-pier.webp" alt="St. Petersburg waterfront lifestyle" width="735" height="980" />
+            <img class="image-main" src="assets/images/cam-fitness-about.webp" alt="Cam Meyer with Skye" width="1254" height="1254" loading="lazy" decoding="async" />
+            <img class="image-overlap" src="assets/images/st-pete-pier.webp" alt="St. Petersburg waterfront lifestyle" width="735" height="980" loading="lazy" decoding="async" />
           </div>
 
           <div class="editorial-copy reveal">
@@ -204,10 +228,10 @@
 
           <div class="contact-card glass-card reveal">
             <h3>Contact Cam Meyer Fitness</h3>
-            <a class="contact-line" href="tel:14243336200">424.333.6200</a>
+            <a class="contact-line" href="tel:+14243336200">424.333.6200</a>
             <a class="contact-line" href="mailto:cammeyerfit@gmail.com">cammeyerfit@gmail.com</a>
             <p>Personal training in St. Petersburg, Florida.</p>
-            <a class="button button-primary full" href="tel:+1424333620">Schedule a Conversation</a>
+            <a class="button button-primary full" href="tel:+14243336200">Schedule a Conversation</a>
           </div>
         </div>
       </section>
@@ -215,7 +239,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="220" height="147" />
+        <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="220" height="147" loading="lazy" decoding="async" />
         <p>Strength. Confidence. Longevity.</p>
         <p>© 2026 Cam Meyer Fitness. St. Petersburg, Florida.</p>
       </div>

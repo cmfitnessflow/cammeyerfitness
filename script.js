@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
@@ -18,6 +20,13 @@ navToggle?.addEventListener("click", () => {
 });
 
 navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMenu();
+    navToggle?.focus();
+  }
+});
 
 window.addEventListener(
   "scroll",
