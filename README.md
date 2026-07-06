@@ -1,16 +1,20 @@
-# Cam Meyer Fitness Website
+# Cam Meyer Fitness Static Website
 
-Updated and optimized static website for Cam Meyer Fitness.
+Premium static website for Cam Meyer Fitness.
 
-## Included
-- `index.html` — complete one-page website
-- `styles.css` — responsive design system
-- `script.js` — mobile navigation and scroll reveal behavior
-- `assets/images/` — supplied WebP imagery
-- `assets/logo/` — supplied Cam Meyer Fitness logo
-- Optimized logo asset for faster repeated loading
-- Legacy redirect pages for About, Contact, FAQ, Personal Training, and Testimonials
-- `robots.txt` and `sitemap.xml`
+## Pages
+- index.html
+- about.html
+- training.html
+- testimonials.html
+- faq.html
+- contact.html
+
+## Contact
+Phone: (424) 333-6200
+Email: cammeyerfit@gmail.com
 
 ## Notes
-This is a static HTML/CSS/JS site with no build step required. Upload the full folder contents to hosting.
+- Booking integration placeholder included: "Booking Calendar Coming Soon"
+- Built with semantic HTML, CSS, and vanilla JavaScript
+- Local SEO areas included across content
