@@ -4,10 +4,13 @@ const navMenu = document.querySelector("[data-nav-menu]");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const revealItems = document.querySelectorAll(".reveal");
 
-const closeMenu = () => {
+const closeMenu = ({ restoreFocus = false } = {}) => {
   document.body.classList.remove("nav-open");
   navMenu?.classList.remove("is-open");
   navToggle?.setAttribute("aria-expanded", "false");
+  if (restoreFocus) {
+    navToggle?.focus();
+  }
 };
 
 navToggle?.addEventListener("click", () => {
@@ -17,7 +20,19 @@ navToggle?.addEventListener("click", () => {
   navToggle.setAttribute("aria-expanded", String(!isOpen));
 });
 
-navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+navLinks.forEach((link) => link.addEventListener("click", () => closeMenu()));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navToggle?.getAttribute("aria-expanded") === "true") {
+    closeMenu({ restoreFocus: true });
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.matchMedia("(min-width: 961px)").matches) {
+    closeMenu();
+  }
+});
 
 window.addEventListener(
   "scroll",
