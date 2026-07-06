@@ -43,6 +43,7 @@ body {
 
 body.nav-open {
   overflow: hidden;
+  touch-action: none;
 }
 
 img {
@@ -137,7 +138,7 @@ summary {
 .nav-menu a {
   position: relative;
   display: inline-flex;
-  min-height: 42px;
+  min-height: 48px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(35, 34, 30, 0.14);
@@ -763,6 +764,8 @@ cite {
     place-content: center;
     gap: 1.5rem;
     padding: 6rem 1.25rem 2rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     background: rgba(244, 240, 231, 0.98);
     font-size: 1.35rem;
     opacity: 0;
@@ -804,11 +807,27 @@ cite {
   }
 
   .hero {
-    min-height: 700px;
+    min-height: min(760px, 92svh);
+  }
+
+  .section {
+    padding: clamp(4rem, 8vw, 6rem) 0;
+  }
+
+  .hero-bg {
+    background-position: 58% center;
   }
 }
 
 @media (max-width: 620px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .shell {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
   .brand img {
     width: 132px;
   }
@@ -818,16 +837,37 @@ cite {
   }
 
   .hero {
-    min-height: 650px;
+    min-height: min(720px, 88svh);
+  }
+
+  .hero-content {
+    padding: 6.5rem 0 3.75rem;
+  }
+
+  .hero-bg {
+    background-position: 63% center;
+  }
+
+  .section,
+  .contact-section,
+  .philosophy {
+    padding: clamp(3.5rem, 14vw, 4.75rem) 0;
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.5rem);
+    max-width: 10ch;
+    font-size: clamp(3rem, 13.6vw, 4.25rem);
+    line-height: 0.98;
   }
 
   h2 {
-    font-size: clamp(2.25rem, 11vw, 3.6rem);
+    max-width: 12ch;
+    font-size: clamp(2.2rem, 10.4vw, 3.35rem);
     line-height: 1;
+  }
+
+  .hero-lede {
+    font-size: clamp(1.05rem, 4.2vw, 1.18rem);
   }
 
   .hero-actions,
@@ -835,9 +875,28 @@ cite {
     width: 100%;
   }
 
+  .button {
+    min-height: 56px;
+  }
+
+  .hero-trust {
+    margin-top: 2rem;
+  }
+
   .cards-grid,
   .philosophy-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .result-list article,
+  .faq-list details,
+  .steps li {
+    border-radius: 14px;
+  }
+
+  .philosophy-grid {
+    margin-top: 2rem;
   }
 
   .philosophy-grid p {
@@ -848,8 +907,29 @@ cite {
     grid-template-columns: 1fr;
   }
 
+  .contact-card img {
+    width: 180px;
+  }
 
   .footer-grid {
     display: grid;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: clamp(2.75rem, 13vw, 3.4rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .hero {
+    min-height: min(680px, 86svh);
+  }
+
+  .hero-content {
+    padding-top: 6rem;
   }
 }
