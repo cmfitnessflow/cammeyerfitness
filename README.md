@@ -1,15 +1,15 @@
-# Cam Meyer Fitness Rebuild
+# Cam Meyer Fitness Website
 
-Static one-page website rebuilt with a minimalist, friendly, asymmetrical layout.
+Updated static website for Cam Meyer Fitness.
 
-## Files
-- `index.html` — main website
-- `styles.css` — full responsive design system
-- `script.js` — lightweight navigation and scroll reveal behavior
-- `assets/logo/` — logo asset
-- `assets/images/` — optimized WebP image assets
-- legacy pages redirect to the relevant homepage sections
+## Included
+- `index.html` — complete one-page website
+- `styles.css` — responsive design system
+- `script.js` — mobile navigation and scroll reveal behavior
+- `assets/images/` — supplied WebP imagery
+- `assets/logo/` — supplied Cam Meyer Fitness logo
+- Legacy redirect pages for About, Contact, FAQ, Personal Training, and Testimonials
+- `robots.txt` and `sitemap.xml`
 
-## Contact
-Phone: 424-333-6200  
-Email: cammeyerfit@gmail.com
+## Notes
+This is a static HTML/CSS/JS site with no build step required. Upload the full folder contents to hosting.

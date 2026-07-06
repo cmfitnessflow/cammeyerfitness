@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Personal Training in St. Petersburg, FL | Cam Meyer Fitness</title>
+    <title>Personal Trainer in St. Petersburg, FL | Cam Meyer Fitness</title>
     <meta
       name="description"
-      content="Friendly personal fitness coaching in St. Petersburg, Florida for beginners, adults 50+, and active adults who want strength, mobility, confidence, and longevity."
+      content="Calm, personalized strength and longevity coaching in St. Petersburg, FL for beginners, adults 40+, and active people who want to move better, build confidence, and stay strong for life."
     />
     <link rel="canonical" href="https://www.cammeyerfitness.com/" />
+    <meta name="theme-color" content="#202124" />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Cam Meyer Fitness | Strength. Confidence. Longevity." />
     <meta
       property="og:description"
-      content="Personal fitness coaching in St. Petersburg for beginners and adults 50+ who want to stay strong, mobile, independent, and pain-free."
+      content="Personal training in St. Petersburg designed around real life: strength, mobility, balance, confidence, and sustainable progress."
     />
     <meta property="og:url" content="https://www.cammeyerfitness.com/" />
-    <meta property="og:image" content="https://www.cammeyerfitness.com/assets/images/rowing-hero.webp" />
-    <meta property="og:image:width" content="1600" />
-    <meta property="og:image:height" content="1066" />
-    <meta property="og:image:alt" content="Calm fitness training environment for Cam Meyer Fitness" />
+    <meta property="og:image" content="https://www.cammeyerfitness.com/assets/logo/cam-meyer-fitness-logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="icon" type="image/png" href="assets/logo/cam-meyer-fitness-logo.png" />
-    <link rel="preload" as="image" href="assets/images/rowing-hero.webp" />
+    <link rel="preload" as="image" href="assets/images/squat-bar-bg.webp" />
+    <link rel="preload" as="image" href="assets/logo/cam-meyer-fitness-logo.png" />
     <link rel="stylesheet" href="styles.css" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -36,36 +38,22 @@
             "telephone": "+14243336200",
             "email": "cammeyerfit@gmail.com",
             "image": "https://www.cammeyerfitness.com/assets/logo/cam-meyer-fitness-logo.png",
-            "description": "Personal fitness coaching in St. Petersburg, Florida for beginners, adults 50+, and active adults who want strength, mobility, confidence, and longevity.",
+            "description": "Personal training and longevity-focused fitness coaching in St. Petersburg, Florida.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "St. Petersburg",
               "addressRegion": "FL",
               "addressCountry": "US"
             },
-            "areaServed": { "@type": "City", "name": "St. Petersburg" },
-            "priceRange": "$$",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Personal training services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "In-person personal training",
-                    "areaServed": "St. Petersburg, FL"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Online fitness coaching"
-                  }
-                }
-              ]
-            }
+            "areaServed": [
+              { "@type": "City", "name": "St. Petersburg" },
+              { "@type": "Place", "name": "Downtown St. Petersburg" },
+              { "@type": "Place", "name": "Old Northeast" },
+              { "@type": "Place", "name": "Snell Isle" },
+              { "@type": "Place", "name": "Shore Acres" },
+              { "@type": "Place", "name": "St. Pete Beach" }
+            ],
+            "priceRange": "$$"
           },
           {
             "@type": "Person",
@@ -73,6 +61,36 @@
             "name": "Cam Meyer",
             "jobTitle": "Personal Fitness Coach",
             "worksFor": { "@id": "https://www.cammeyerfitness.com/#business" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.cammeyerfitness.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you work with beginners?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Cam Meyer Fitness is a strong fit for beginners who want a calm, supportive coach and a plan that starts at the right level."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you train adults over 50?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Coaching often focuses on strength, mobility, balance, confidence, joint-friendly movement, and long-term independence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where does training take place?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Training can take place in homes, condo fitness centers, local gym settings, or online when appropriate in the St. Petersburg area."
+                }
+              }
+            ]
           }
         ]
       }
@@ -85,7 +103,7 @@
     <header class="site-header" data-header>
       <nav class="nav shell" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="Cam Meyer Fitness home">
-          <img src="assets/logo/cam-meyer-fitness-logo-transparent.png" alt="Cam Meyer Fitness" width="300" height="200" />
+          <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="1536" height="864" />
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
@@ -94,100 +112,228 @@
         </button>
 
         <div class="nav-menu" id="nav-menu" data-nav-menu>
-          <a href="#approach">Approach</a>
-          <a href="#coaching">Coaching</a>
-          <a href="#results">Results</a>
-          <a class="nav-cta" href="tel:+14243336200">Schedule a Conversation</a>
+          <a href="#approach">Meet Cam</a>
+          <a href="#services">Training</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQs</a>
+          <a class="nav-cta" href="#contact">Start Here</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero section" id="top" aria-labelledby="hero-title">
-        <div class="hero-grid shell">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Personal training in St. Petersburg, Florida</p>
-            <h1 id="hero-title">Stay strong for the life you love.</h1>
-            <p class="hero-lede">
-              Friendly personal fitness coaching for beginners, adults 50+, and active adults who want to move better,
-              feel more confident, and stay independent.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Schedule Your First Session</a>
-              <a class="button button-ghost" href="tel:+14243336200">Call Cam</a>
-            </div>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="shell hero-content">
+          <p class="eyebrow reveal">Personal training in St. Petersburg, Florida</p>
+          <h1 id="hero-title" class="reveal">Build strength for the life you love.</h1>
+          <p class="hero-lede reveal">
+            Calm, personalized coaching for beginners, adults 40+, and active people who want to move better,
+            feel stronger, and stay confident for years to come.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#contact">Schedule a Conversation</a>
+            <a class="button button-glass" href="tel:+14243336200">Call 424.333.6200</a>
           </div>
+          <div class="hero-trust reveal" aria-label="Coaching focus areas">
+            <span>Strength</span>
+            <span>Mobility</span>
+            <span>Balance</span>
+            <span>Longevity</span>
+          </div>
+        </div>
+      </section>
 
-          <div class="hero-media reveal" aria-label="Training-focused fitness imagery">
-            <img src="assets/images/rowing-hero.webp" alt="Fitness equipment in a calm training environment" width="1600" height="1066" fetchpriority="high" decoding="async" />
-            <div class="glass-card hero-card">
-              <span>Strength</span>
-              <span>Confidence</span>
-              <span>Longevity</span>
-            </div>
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="shell intro-grid">
+          <div class="intro-copy reveal">
+            <p class="eyebrow">A better way to train</p>
+            <h2 id="intro-title">Fitness should make everyday life easier.</h2>
+          </div>
+          <div class="intro-text reveal">
+            <p>
+              Most people do not need a louder gym, a more complicated program, or a trainer who pushes intensity before
+              understanding the person in front of them. They need a clear plan, a coach they trust, and workouts that
+              build capacity without creating unnecessary stress.
+            </p>
+            <p>
+              Cam Meyer Fitness is built around real life. The goal is not to chase punishment or perfection. The goal
+              is to help you build strength, improve mobility, reduce hesitation around movement, and feel capable in the
+              moments that matter: walks along the waterfront, travel, family time, hobbies, sports, errands, and the
+              simple confidence of knowing your body can do more.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="section approach" id="approach" aria-labelledby="approach-title">
-        <div class="shell asym-grid">
-          <div class="image-stack reveal">
-            <img class="image-main" src="assets/images/cam-fitness-about.webp" alt="Cam Meyer with Skye" width="1254" height="1254" loading="lazy" decoding="async" />
-            <img class="image-overlap" src="assets/images/st-pete-pier.webp" alt="St. Petersburg waterfront lifestyle" width="735" height="980" loading="lazy" decoding="async" />
+        <div class="shell feature-grid">
+          <div class="portrait-card reveal">
+            <img src="assets/images/cam-skye-about.webp" alt="Illustration of Cam Meyer with his dog Skye" width="1536" height="1536" loading="lazy" />
           </div>
-
-          <div class="editorial-copy reveal">
-            <p class="eyebrow">A calmer way to train</p>
-            <h2 id="approach-title">Fitness should improve your life — not take it over.</h2>
+          <div class="feature-copy reveal">
+            <p class="eyebrow">Meet Cam</p>
+            <h2 id="approach-title">Supportive coaching without the intimidation.</h2>
             <p>
-              Maybe you are just getting started. Maybe your knees, shoulders, or back have made movement feel less
-              predictable. Maybe you want to stay active for walks downtown, travel, gardening, golf, pickleball, or
-              time with family.
+              Working with a personal trainer should feel encouraging, professional, and human. Cam brings a calm,
+              attentive coaching style to every session, helping clients feel comfortable while still making measurable
+              progress.
             </p>
             <p>
-              Cam's coaching is built around real life: strength, mobility, balance, confidence, and consistency without
-              intimidation.
+              That means your program starts with your body, your history, your schedule, and your goals. If you are new
+              to training, you will build a consistent routine without feeling judged. If you are returning after time away,
+              you will rebuild safely. If you want to stay strong as you age, each session will support the strength,
+              balance, and mobility that help preserve independence.
+            </p>
+            <div class="mini-list" aria-label="Reasons clients choose Cam">
+              <span>Beginner-friendly</span>
+              <span>Joint-conscious</span>
+              <span>Progressive</span>
+              <span>Calm and clear</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-band" aria-labelledby="philosophy-title">
+        <div class="dark-bg curl" aria-hidden="true"></div>
+        <div class="shell philosophy">
+          <p class="eyebrow reveal">The philosophy</p>
+          <h2 id="philosophy-title" class="reveal">Strength is not about proving something. It is about keeping your life open to being better.</h2>
+          <div class="philosophy-grid reveal">
+            <p>Carrying groceries without pain.</p>
+            <p>Getting up from the floor with confidence.</p>
+            <p>Walking farther without worrying about fatigue.</p>
+            <p>Traveling, golfing, gardening, pickleballing, or playing with family without feeling limited.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="shell section-heading reveal">
+          <p class="eyebrow">Coaching options</p>
+          <h2 id="services-title">Personal training designed around your life.</h2>
+          <p>
+            Sessions are practical, focused, and adapted to your comfort level. Cam can coach in homes, condo fitness
+            centers, local training spaces, and online when a flexible option makes the most sense.
+          </p>
+        </div>
+
+        <div class="shell cards-grid">
+          <article class="service-card reveal">
+            <h3>In-home personal training</h3>
+            <p>
+              Train in a familiar environment with a plan that fits your space, schedule, and equipment. Ideal for people
+              who want privacy, convenience, and a calm coaching experience.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Condo gym coaching</h3>
+            <p>
+              Perfect for St. Pete residents who have access to a building fitness center but want guidance, structure,
+              and confidence using the equipment correctly.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Strength and mobility</h3>
+            <p>
+              Build usable strength while improving range of motion, balance, control, and confidence in everyday
+              movement patterns.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Longevity-focused fitness</h3>
+            <p>
+              Smart training for adults who want to stay active, independent, and resilient through every decade of life.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Beginner foundations</h3>
+            <p>
+              Learn how to train safely and consistently without overwhelm. Each session gives you more confidence in
+              your body and your routine.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Online coaching support</h3>
+            <p>
+              When travel, schedule, or distance gets in the way, online coaching can help you stay consistent with clear
+              programming and accountability.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section local" aria-labelledby="local-title">
+        <div class="shell local-grid">
+          <div class="local-image reveal">
+            <img src="assets/images/st-pete-pier.webp" alt="St. Petersburg Pier and waterfront with palm trees" width="735" height="980" loading="lazy" />
+          </div>
+          <div class="local-copy reveal">
+            <p class="eyebrow">Built for the St. Pete lifestyle</p>
+            <h2 id="local-title">Train for the city you live in.</h2>
+            <p>
+              St. Petersburg is an active place to live. Waterfront walks, pickleball, beach days, boating, golf,
+              cycling, markets, travel, and time outdoors are all easier to enjoy when your body feels strong and
+              dependable.
+            </p>
+            <p>
+              Cam works with clients throughout the St. Petersburg area, including Downtown St. Pete, Old Northeast,
+              Snell Isle, Shore Acres, Gulfport, Pasadena, Tierra Verde, Treasure Island, and St. Pete Beach.
+            </p>
+            <p>
+              The point of training is not to live in the gym. The point is to live better outside of it.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section coaching" id="coaching" aria-labelledby="coaching-title">
-        <div class="shell coaching-layout">
-          <div class="coaching-heading reveal">
-            <p class="eyebrow">How coaching works</p>
-            <h2 id="coaching-title">Start with a conversation, not a hard sell.</h2>
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="shell process-layout">
+          <div class="process-heading reveal">
+            <p class="eyebrow">What to expect</p>
+            <h2 id="process-title">Start with a conversation, not a hard sell.</h2>
+            <p>
+              The first step is simple: talk through your goals, move through a shortened workout, and decide whether the
+              coaching relationship feels right.
+            </p>
           </div>
-
-          <div class="process-card glass-card reveal">
-            <ol class="steps">
-              <li>
-                <span>01</span>
-                <div>
-                  <h3>Talk through your goals</h3>
-                  <p>We discuss your history, comfort level, limitations, and what you want training to change.</p>
-                </div>
-              </li>
-              <li>
-                <span>02</span>
-                <div>
-                  <h3>Move through a shortened workout</h3>
-                  <p>Cam watches how you move so the plan starts in the right place and feels approachable — whether you train at a condo fitness center, in your home, or another comfortable local setting.</p>
-                </div>
-              </li>
-              <li>
-                <span>03</span>
-                <div>
-                  <h3>Build a plan around your life</h3>
-                  <p>In-person coaching is available throughout St. Petersburg, including condo fitness centers and clients’ homes, with online coaching available when needed.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
+          <ol class="steps reveal">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Talk through your goals</h3>
+                <p>
+                  Cam listens first. You will discuss your training history, current limitations, schedule, confidence
+                  level, and what you want fitness to change in daily life.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Move through a shortened workout</h3>
+                <p>
+                  This is not a test. It is a low-pressure way to understand how you move, where you feel strong, and
+                  where your program should begin.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Build a realistic plan</h3>
+                <p>
+                  Your plan is built around sustainable progress: strength, mobility, confidence, accountability, and a
+                  routine you can actually maintain.
+                </p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section class="section results" id="results" aria-labelledby="results-title">
+      <section class="section results" aria-labelledby="results-title">
         <div class="shell results-grid">
           <div class="quote-block reveal">
             <p class="eyebrow">Client results</p>
@@ -197,37 +343,81 @@
             </blockquote>
             <cite>Arthur V., 55</cite>
           </div>
-
           <div class="result-list reveal">
             <article>
-              <h3>Beginner confidence</h3>
-              <p>Clear coaching that helps you feel comfortable instead of judged or overwhelmed.</p>
+              <h3>More confidence</h3>
+              <p>Feel comfortable training, asking questions, and learning how your body works.</p>
             </article>
             <article>
-              <h3>Better daily movement</h3>
-              <p>Strength and mobility that carry over into errands, travel, hobbies, and everyday life.</p>
+              <h3>Better movement</h3>
+              <p>Improve the strength, balance, and mobility you use in everyday life.</p>
             </article>
             <article>
-              <h3>Longevity-minded training</h3>
-              <p>Smart progress focused on staying independent, capable, and active for years to come.</p>
+              <h3>Long-term consistency</h3>
+              <p>Build habits that are realistic enough to last beyond a short burst of motivation.</p>
             </article>
           </div>
         </div>
       </section>
 
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="shell faq-layout">
+          <div class="faq-heading reveal">
+            <p class="eyebrow">Questions</p>
+            <h2 id="faq-title">A calmer first step.</h2>
+            <p>
+              If you have felt unsure about hiring a trainer, that is normal. These answers are here to reduce the
+              friction before you reach out.
+            </p>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>Do you work with beginners?</summary>
+              <p>Yes. Beginners are welcome. My coaching starts at your current level and builds from there.</p>
+            </details>
+            <details>
+              <summary>Do you train adults over 50?</summary>
+              <p>Yes. Many clients want strength, balance, mobility, independence, and confidence as they get older and we work together to make that happen.</p>
+            </details>
+            <details>
+              <summary>Can we train at my condo gym?</summary>
+              <p>Yes. Condo fitness centers are often a great fit because they are convenient and familiar. I am happy to provide a Certificate of Insurance (COI) if needed.</p>
+            </details>
+            <details>
+              <summary>What if I have joint pain or past injuries?</summary>
+              <p>Cam can adapt sessions around your history and comfort level. Coaching is not a replacement for medical care, but it can be designed thoughtfully around what your body needs.</p>
+            </details>
+            <details>
+              <summary>How often should I train?</summary>
+              <p>Many clients start with one to three sessions per week depending on goals, schedule, budget, and current fitness level.</p>
+            </details>
+            <details>
+              <summary>Do I need equipment?</summary>
+              <p>No. Cam can work with available equipment or build sessions around bodyweight, bands, dumbbells, machines, or a full gym setup.</p>
+            </details>
+            <details>
+              <summary>What areas do you serve?</summary>
+              <p>Cam serves clients throughout the St. Petersburg area, including Downtown St. Pete, Old Northeast, Snell Isle, Shore Acres, and nearby beach communities.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-bg" aria-hidden="true"></div>
         <div class="shell contact-grid">
           <div class="contact-copy reveal">
             <p class="eyebrow">Ready when you are</p>
-            <h2 id="contact-title">The first step is simple.</h2>
+            <h2 id="contact-title">Let’s talk about what stronger could look like for you.</h2>
             <p>
-              Schedule an initial meeting and conversation with Cam. You will talk through your goals, move through a
-              shortened workout, and decide together whether coaching is the right fit.
+              Reach out to schedule an initial conversation with Cam. You will talk through your goals, ask questions,
+              and decide on the next best step without pressure.
             </p>
           </div>
 
-          <div class="contact-card glass-card reveal">
-            <h3>Contact Cam Meyer Fitness</h3>
+          <div class="contact-card reveal">
+            <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="1536" height="864" loading="lazy" />
+            <h3>Contact Cam</h3>
             <a class="contact-line" href="tel:+14243336200">424.333.6200</a>
             <a class="contact-line" href="mailto:cammeyerfit@gmail.com">cammeyerfit@gmail.com</a>
             <p>Personal training in St. Petersburg, Florida.</p>
@@ -239,7 +429,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="220" height="147" loading="lazy" decoding="async" />
+        <img src="assets/logo/cam-meyer-fitness-logo.png" alt="Cam Meyer Fitness" width="1536" height="864" />
         <p>Strength. Confidence. Longevity.</p>
         <p>© 2026 Cam Meyer Fitness. St. Petersburg, Florida.</p>
       </div>
