@@ -35,7 +35,6 @@ a{color:inherit}
 .hero-copy{position:relative;z-index:1;padding:clamp(2rem,6vw,6rem)}
 .hero-home .hero-copy{max-width:980px}
 .hero-home h1,.hero-home .hero-copy p{color:var(--white)}
-.hero-home .hero-copy p:not(.eyebrow){color:#FFFFFF;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 .hero-home .eyebrow{color:var(--sand)}
 .hero-home .secondary.dark:hover{background:rgba(255,255,255,.12)}
 .eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--warm-gray);margin:0 0 1rem}
@@ -52,12 +51,9 @@ h3{font-size:1.08rem;letter-spacing:-.02em}
 .secondary{background:transparent;color:var(--charcoal)}
 .secondary.dark{border-color:var(--white);color:var(--white)}
 .full{width:100%;margin-top:1rem}
-.trust-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:clamp(1rem,3vw,2rem) clamp(1rem,5vw,5rem);border-block:1px solid var(--line);background:var(--white)}
-.trust-bar div{position:relative;overflow:hidden;padding:1.4rem clamp(1rem,3vw,2rem);border:1px solid var(--line);font-weight:800;letter-spacing:.02em;background:linear-gradient(135deg,var(--white),var(--beige));transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease}
-.trust-bar div::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .22s ease}
-.trust-bar div:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(244,196,0,.55)}
-.trust-bar div:hover::after{transform:scaleX(1)}
-.trust-bar span{display:block;color:var(--accent);margin:0 0 .35rem;font-size:.9rem;letter-spacing:.18em}
+.trust-bar{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);background:var(--white)}
+.trust-bar div{padding:1.35rem clamp(1rem,3vw,2rem);border-right:1px solid var(--line);font-weight:800;letter-spacing:.02em}
+.trust-bar span{color:var(--accent);margin-right:.6rem}
 .split-section{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center;padding:clamp(4rem,9vw,8rem) clamp(1rem,5vw,5rem)}
 .split-section.reverse{background:var(--beige)}
 .section-copy{max-width:720px}
