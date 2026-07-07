@@ -111,7 +111,7 @@ cite{display:block;font-family:var(--sans);font-size:1rem;font-style:normal;lett
 .faq-list{padding:clamp(3rem,6vw,5rem) clamp(1rem,5vw,5rem);max-width:1000px;margin:auto}
 details{border-bottom:1px solid var(--line);padding:1.4rem 0}
 summary{cursor:pointer;font-weight:800;font-size:1.1rem}
-details p{color:#aaaaaa;max-width:760px}
+details p{color:#555;max-width:760px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:clamp(3rem,6vw,5rem) clamp(1rem,5vw,5rem)}
 .contact-card{border:1px solid var(--line);padding:clamp(2rem,4vw,3rem);background:var(--white)}
 .contact-card.muted{background:var(--beige)}
